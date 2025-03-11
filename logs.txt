@@ -1,0 +1,19 @@
+*   68476ed Merge branch '7-count-tasks-per-category'
+|\  
+| * baec9ea Implement task #7
+* |   d19d1cf Merge pull request #11 from MM186079/2-find-all-completed-tasks
+|\ \  
+| * \   db7bc9c Merge branch 'master' of https://github.com/MM186079/SI_2025_lab1_186079 into 2-find-all-completed-tasks
+| |\ \  
+| |/ /  
+|/| |   
+* | |   c624720 Merge pull request #10 from MM186079/1-remove-a-task-by-name
+|\ \ \  
+| |_|/  
+|/| |   
+| * | d617d65 Implement task #1
+|/ /  
+| * af6a7df Implement task #2
+|/  
+* 5bf0c6c Add starter code
+* 8d4fc73 Initial commit
