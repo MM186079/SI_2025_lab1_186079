@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 enum Priority {
     LOW, MEDIUM, HIGH
@@ -97,8 +98,7 @@ class TaskManager {
 
     // 7. Count tasks per category
     public Map<String, Integer> countTasksPerCategory() {
-        // TODO: Implement counting logic
-        return new HashMap<>();
+        return tasks.stream().collect(Collectors.groupingBy(Task::getCategory, Collectors.summingInt(e -> 1)));
     }
 
     // 8. Mark a task as completed by name
@@ -119,7 +119,7 @@ public class SI2025Lab1Main {
         manager.addTask("Submit assignment", Priority.MEDIUM, "School");
         manager.addTask("Buy groceries", Priority.LOW, "Personal");
 
-        // MISSING: Calls to the new methods that will be implemented
+        System.out.println(manager.countTasksPerCategory());
 
         manager.printTasks();
     }
